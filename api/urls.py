@@ -10,7 +10,7 @@ router.register('post', views.PostViewset)
 router.register('comment', views.CommentViewset)
 
 urlpatterns = [
-    path('register/', views.CreateUserView.as_view(), name='register')
-    path('myprofile', views.views.MyProfileListView.as_view(), name='myprofile')
+    path('register/', views.CreateUserView.as_view(), name='register'),
+    path('myprofile', views.MyProfileListView.as_view(), name='myprofile'),
     path('', include(router.urls))
 ]
