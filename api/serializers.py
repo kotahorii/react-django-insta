@@ -16,7 +16,7 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 class ProfileSerializer(serializers.ModelSerializer):
-    create_on = serializers.DateTimeField(format="%Y-%m-%d", read_only=True)
+    created_on = serializers.DateTimeField(format="%Y-%m-%d", read_only=True)
 
     class Meta:
         model = Profile
@@ -25,7 +25,7 @@ class ProfileSerializer(serializers.ModelSerializer):
 
 
 class PostSerializer(serializers.ModelSerializer):
-    create_on = serializers.DateTimeField(format="%Y-%m-%d", read_only=True)
+    created_on = serializers.DateTimeField(format="%Y-%m-%d", read_only=True)
 
     class Meta:
         model = Post
